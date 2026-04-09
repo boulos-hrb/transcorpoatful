@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "buildCommand": "npm install",
+  "env": {
+    "SUITEFLEET_API_URL": "@suitefleet_api_url",
+    "SUITEFLEET_EMAIL": "@suitefleet_email",
+    "SUITEFLEET_PASSWORD": "@suitefleet_password",
+    "SUITEFLEET_CLIENT_ID": "@suitefleet_client_id",
+    "SUITEFLEET_CUSTOMER_ID": "@suitefleet_customer_id",
+    "SHOPIFY_WEBHOOK_SECRET": "@shopify_webhook_secret"
+  },
+  "functions": {
+    "api/**/*.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  }
+}
